@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Tiết Sản Phẩm - Tiki Clone</title>
+  <!-- Font Awesome 5.15.4 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Banner -->
+  <div class="top-banner">
+    Freeship đơn từ 45k, giảm nhiều hơn cùng <span>Freeship XTRA</span>
+  </div>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="header-main">
+      <div class="logo">
+        <h1 class="logo-text">TIKI</h1>
+        <span class="logo-sub">Tốt & Nhanh</span>
+      </div>
+      <div class="search-bar">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" placeholder="Freeship đơn từ 45k">
+        <button class="btn-search">Tìm kiếm</button>
+      </div>
+      <div class="header-user">
+        <a href="#"><i class="fas fa-home"></i> Trang chủ</a>
+        <a href="#"><i class="far fa-user"></i> Tài khoản</a>
+        <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></a>
+      </div>
+    </div>
+    
+    <div class="header-sub">
+      <div class="quick-links">
+        <a href="#">điện gia dụng</a>
+        <a href="#">xe cổ</a>
+        <a href="#">mẹ & bé</a>
+        <a href="#">khỏe đẹp</a>
+        <a href="#">nhà cửa</a>
+        <a href="#">sách</a>
+        <a href="#">thể thao</a>
+        <a href="#">ensure</a>
+      </div>
+      <div class="location-info">
+        <i class="fas fa-map-marker-alt"></i> Giao đến: <span>Q. 1, P. Bến Nghé, Hồ Chí Minh</span>
+      </div>
+    </div>
+
+    <!-- Commitments -->
+    <div class="commitments">
+      <span><i class="fas fa-check-circle"></i> Cam kết 100% hàng thật</span>
+      <span><i class="fas fa-undo"></i> Hoàn 200% nếu hàng giả</span>
+      <span><i class="fas fa-calendar-alt"></i> 30 ngày đổi trả</span>
+      <span><i class="fas fa-bolt"></i> Giao nhanh 2h</span>
+      <span><i class="fas fa-shield-alt"></i> Giá siêu rẻ</span>
+      <span><i class="fas fa-truck"></i> Freeship mọi đơn</span>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="#">Trang chủ</a> &gt; <a href="#">Đồ Chơi - Mẹ & Bé</a> &gt; <a href="#">Dinh dưỡng cho người lớn</a> &gt; <span>Lon Sữa Glucerna 800g/lon - Tặng 2 gói dùng thử</span>
+  </div>
+
+  <!-- Main Product Detail Section -->
+  <main class="product-container">
+    
+    <!-- Column 1: Images -->
+    <div class="product-images">
+      <div class="main-image-box">
+        <img id="main-img" src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&auto=format&fit=crop" alt="Lon Sữa Glucerna">
+      </div>
+      <div class="thumbnail-list">
+        <div class="thumb active" onclick="changeImage('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&auto=format&fit=crop')">
+          <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=100&auto=format&fit=crop" alt="Mặt bên trái">
+          <span>MẶT BÊN TRÁI</span>
+        </div>
+        <div class="thumb" onclick="changeImage('https://images.unsplash.com/photo-1550572017-edf7e1ed4676?w=400&auto=format&fit=crop')">
+          <img src="https://images.unsplash.com/photo-1550572017-edf7e1ed4676?w=100&auto=format&fit=crop" alt="Mặt bên phải">
+          <span>MẶT BÊN PHẢI</span>
+        </div>
+      </div>
+      <div class="image-note">
+        <i class="far fa-eye"></i> Xem thêm Ưu điểm & lưu ý của sản phẩm &gt;
+      </div>
+    </div>
+
+    <!-- Column 2: Info & Details -->
+    <div class="product-info">
+      <div class="badge-top">
+        <span class="badge-red"><i class="fas fa-fire"></i> TOP DEAL</span>
+        <span class="badge-blue"><i class="fas fa-sync"></i> 30 NGÀY ĐỔI TRẢ</span>
+        <span class="badge-blue"><i class="fas fa-shield-alt"></i> CHÍNH HÃNG</span>
+        <span class="brand-name">Thương hiệu: <strong>Glucerna</strong></span>
+      </div>
+
+      <h1 class="product-title">Lon Sữa Glucerna 800g/lon - Tặng 2 gói dùng thử</h1>
+      
+      <div class="rating-box">
+        <span class="score">5.0</span>
+        <span class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </span>
+        <span class="sold-count">| Đã bán 435</span>
+      </div>
+
+      <div class="origin-tag">Made in Spain</div>
+
+      <div class="price-box">
+        <span class="price" id="unit-price-display">1.034.550<sup>đ</sup></span>
+      </div>
+
+      <div class="flavor-section">
+        <label>Hương vị</label>
+        <div class="flavor-options">
+          <button class="btn-flavor active">Vani</button>
+        </div>
+      </div>
+
+      <div class="shipping-info">
+        <h3>Thông tin vận chuyển</h3>
+        <p class="ship-to">Giao đến Q. 1, P. Bến Nghé, Hồ Chí Minh <a href="#">Đổi</a></p>
+        
+        <div class="ship-option">
+          <span class="badge-fast">NOW</span> <strong>Giao siêu tốc 2h</strong>
+          <p>Trước 11h hôm nay: <span class="free-text">Miễn phí 25.000đ</span></p>
+        </div>
+
+        <div class="ship-option">
+          <i class="fas fa-truck"></i> <strong>Giao đúng sáng mai</strong>
+          <p>8h - 12h, 01/10: <span class="free-text">Miễn phí 25.000đ</span></p>
+        </div>
+
+        <div class="promo-ship">
+          <p><i class="fas fa-ticket-alt"></i> Freeship 10k đơn từ 45k, Freeship 25k đơn từ 100k <i class="fas fa-info-circle"></i></p>
+        </div>
+      </div>
+
+      <div class="extra-services">
+        <h3>Dịch vụ bổ sung</h3>
+        <div class="service-item">
+          <span><i class="fas fa-credit-card"></i> Ưu đãi đến 600k với thẻ TikiCard</span>
+          <a href="#">Đăng ký</a>
+        </div>
+        <div class="service-item">
+          <span><i class="fas fa-hand-holding-usd"></i> Mua trước trả sau</span>
+          <a href="#">Đăng ký</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 3: Seller & Quantity Control (Interactive) -->
+    <div class="product-sidebar">
+      <div class="seller-card">
+        <div class="seller-header">
+          <img src="https://via.placeholder.com/40x40/005aab/ffffff?text=TIKI" alt="Tiki Trading" class="seller-logo">
+          <div>
+            <strong>Tiki Trading</strong>
+            <div class="official-tag"><i class="fas fa-check-circle"></i> OFFICIAL</div>
+          </div>
+        </div>
+        <div class="seller-rating">
+          <span>4.7 <i class="fas fa-star yellow"></i></span> | <span>(5.5k+ đánh giá)</span>
+        </div>
+      </div>
+
+      <div class="banner-mini">
+        <span class="badge-sub">Vani</span>
+      </div>
+
+      <!-- Quantity Selection -->
+      <div class="quantity-selector">
+        <label>Số Lượng</label>
+        <div class="qty-btn-group">
+          <button type="button" onclick="decreaseQty()">-</button>
+          <input type="number" id="quantity" value="1" min="1" oninput="calculateSubtotal()">
+          <button type="button" onclick="increaseQty()">+</button>
+        </div>
+      </div>
+
+      <!-- Subtotal Field (Required by prompt) -->
+      <div class="subtotal-box">
+        <label>Tạm tính</label>
+        <div class="subtotal-price" id="subtotal">1.034.550<sup>đ</sup></div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button class="btn-buy-now">Mua ngay</button>
+        <button class="btn-add-cart">Thêm vào giỏ</button>
+        <button class="btn-buy-later">Mua trước trả sau</button>
+      </div>
+
+      <!-- Sidebar Promo Banner -->
+      <div class="side-banner">
+        <div class="side-banner-content">
+          <h4>ĐIỆN MÁY</h4>
+          <p>Giá Tốt Chốt Ngay !!</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
